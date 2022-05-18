@@ -1,0 +1,28 @@
+{
+  "main": {
+    "width": 500,
+    "height": 300,
+    "gravity": 400
+  },
+  "progress": {
+    "day" : 0,
+    "gamevars": {
+      "global": {
+        
+      },
+      "scenes": {
+        "Outside":{
+          
+        }
+      }
+    }
+  },
+  "settings": {
+    "forward": "Z",
+    "backward": "S",
+    "left": "Q",
+    "right": "D",
+    "interract": "SPACE",
+    "debug": false
+  }
+}
