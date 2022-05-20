@@ -5,15 +5,21 @@ import { Outside } from "./src/scenes/Outside.js";
 const args = {
   width: config.main.width,
   height: config.main.height,
-  type: Phaser.AUTO,
-  resolution: 2.65,
+  type: Phaser.WEBGL ,
+  resolution: config.main.resolution,
   canvas: document.querySelector('#game-wrapper'),
+  fps: 60,
   physics: {
     default: 'matter',
     matter: {
-      gravity: { y: 1 },
+      gravity: { y: config.main.gravity },
       debug: config.settings.debug
     }
+  },
+  render: {
+    antialias: false,
+    pixelArt: true,
+    roundPixels: true
   },
   scene: [
     new Outside(config),
