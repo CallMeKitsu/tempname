@@ -29,6 +29,6 @@
     "debug": false
   },
   "player": {
-    "speed" : 20
+    "speed" : 50
   }
 }

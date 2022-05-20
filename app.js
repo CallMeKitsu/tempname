@@ -2,6 +2,9 @@ import config from "./config.json" assert { type: "json" };
 
 import { Outside } from "./src/scenes/Outside.js";
 
+const urlParams = new URLSearchParams(window.location.search);
+config.settings.debug = urlParams.has("debug")
+
 const args = {
   width: config.main.width,
   height: config.main.height,
