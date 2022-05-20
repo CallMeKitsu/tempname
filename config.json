@@ -26,7 +26,8 @@
       "right": "D",
       "interract": "SPACE"
     },
-    "debug": false
+    "debug": false,
+    "zoom": 4
   },
   "player": {
     "speed" : 50

@@ -54,6 +54,10 @@ export class Outside extends Phaser.Scene {
     }
 
     this.physics.add.collider(this.player, this.hitboxes);
+
+    this.cameras.main.setSize(this.config.main.width, this.config.main.height);
+    this.cameras.main.startFollow(this.player);
+    this.cameras.main.zoomTo(this.config.settings.zoom)
   }
 
   update() {
